@@ -1,6 +1,8 @@
 # grantit_codetest
 clone this repo with command:
 git clone https://github.com/STevenL1i/grantit_codetest.git
+    if github prompt error message of No Right Access
+download repo with link: https://github.com/STevenL1i/grantit_codetest/archive/refs/heads/master.zip, then unzip the repo
 
 this code test is developed under:
 System: Linux (CentOS 8)
