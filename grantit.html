@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="grantit.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    </head>
+
+    <style>
+        #welc_title {
+            color: #000000;
+            font-size: 60px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #author {
+            color: #000000;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #buttondiv {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #bookdiv {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+        }
+        #booktable {
+            font-family: Arial;
+            font-size: 16px;
+
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 200px;
+            width: 60%;
+        }
+        tr, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+
+    <body onload="getbookdata();">
+        <h1 id="welc_title">Grantit code test</h1>
+        <h3 id="author">done by Steven</h3>
+        <div id="buttondiv">
+            <button id="reloadbutton" onclick="refresh();">Reload</button>
+            <button id="crawlbutton" onclick="crawldata();">Crawl</button>
+            <button id="deletebutton" onclick="deletedata();">Delete</button>
+        </div>
+        <div id="bookdiv">
+            <h3>Last updated: <span id="updatetime"></span></h3>
+            <table id="booktable">
+                <tr>
+                    <th>书名</th>
+                    <th>作者</th>
+                    <th>出版社</th>
+                    <th>出版时间</th>
+                    <th>价格</th>
+                    <th>评分</th>
+                    <th>评论数</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
