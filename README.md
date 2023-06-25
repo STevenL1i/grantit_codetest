@@ -1,4 +1,7 @@
 # grantit_codetest
+clone this repo with command:
+git clone https://github.com/STevenL1i/grantit_codetest.git
+
 this code test is developed under:
 System: Linux (CentOS 8)
 python: 3.9.6
