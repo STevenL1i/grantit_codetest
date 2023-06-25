@@ -25,5 +25,23 @@ How to run this program:
     - change login credentials in "server.json"
 
 2. initializa MySQL database
-    execute "source init.sql" in MySQL server
+    login to your MySQL server
+    execute command "source init.sql"
 
+3. initialize web page
+    Linux: 
+        - run "cp grantit.* /var/www/html/" command
+        - access the web page through http service
+          (e.g. http://yourserverip:httpdserviceport/grantit.html)
+    Windows:
+        just directly open "grantit.html" file
+
+4. launch backend server
+    execute python script "server.py"
+
+5. then you can open the webpage to crawl, view and clear data
+
+
+
+Notes during the code test:
+I have little experience on backend web development in my own small project, but until this code test I had no experience on python crawler, so it took me some time to search for tutorial to make it run.

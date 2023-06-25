@@ -22,11 +22,8 @@ def crawldata():
 
     return jsonify(result)
 
-@app.route("/getdata", methods=["POST"])
+@app.route("/getdata", methods=["GET"])
 def getdata():
-    req = request.get_data()
-    req = json.loads(req)
-
     result = data.getbookdata()
 
     return jsonify(result)

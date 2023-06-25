@@ -6,8 +6,8 @@ function refresh()
 function getbookdata()
 {
     $.ajax({
-        url: "http://127.0.0.1:9001/getdata",
-        type: "post",
+        url: "http://localhost:9001/getdata",
+        type: "get",
         dataType: "json",
         data: JSON.stringify({
 
