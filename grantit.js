@@ -6,7 +6,7 @@ function refresh()
 function getbookdata()
 {
     $.ajax({
-        url: "http://localhost:9001/getdata",
+        url: "http://43.139.83.100:9001/getdata",
         type: "get",
         dataType: "json",
         data: JSON.stringify({
@@ -55,7 +55,7 @@ function crawldata()
 {
     alert("start crawling data......\nIt might take few seconds to update");
     $.ajax({
-        url: "http://127.0.0.1:9001/crawldata",
+        url: "http://43.139.83.100:9001/crawldata",
         type: "post",
         dataType: "json",
         data: JSON.stringify({
@@ -78,7 +78,7 @@ function crawldata()
 function deletedata()
 {
     $.ajax({
-        url: "http://127.0.0.1:9001/deletedata",
+        url: "http://43.139.83.100:9001/deletedata",
         type: "post",
         dataType: "json",
         data: JSON.stringify({
